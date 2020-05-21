@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="se">
+	<head>
+		<title>Формы</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+		<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+		<!-- <script src="https://epicblog.net/download/datepicker.js"></script> -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="about">
+				<h1>Boka dina bästa upplevelser i höst med Västsverige</h1>
+				<p>Här presenteras de bästa outdoorprodukterna som Västsverige har att erbjuda. Här hittar du både enskilda produkter och färdiga paket, välj det som passar dig bäst. Easy walks in fjällbacka, cykling vid Göta kanal, paddla på egen hand eller med guide är några exempel på vad som finns. Klicka dig vidare för att läsa mer och boka.</p>
+		</div>
+		<div class="menu">
+				<a href="#">Boende</a>
+				<a href="#" class="actives">Se & Göra</a>
+				<a href="#">Evenemang</a>
+		</div>
+		<div class="content">
+			<form>
+					<div class="left_kol">
+						<div class="stroka_1">
+							<p>Vart vill du åka?</p><br>
+							<input type="text" name="Vart" placeholder=" Stad, område, flygplats eller hotellnamn">
+						</div>
+						<div class="stroka_1">
+							<p>Incheckning</p><br>
+							<input type="date" name="incheckning" value="YYYY-MM-DD"><br>
+							<p class="comment">torstag</p>
+						</div>
+						<div class="stroka_3">
+							<label><input type="checkbox" name="inga_specifika_datum">
+								<span>Jag har inga specifika datum</span>
+							</label>
+						</div>
+						<div class="stroka_1">
+							<p>Antal rum:</p><br>
+							<select name="rum">
+								<option value="1_rum">1 rum</option>
+								<option selected value="2_rum">2 rum</option>
+								<option value="3_rum">3 rum</option>
+								<option value="4_rum">4 rum</option>
+							</select>
+						</div>
+						<div class="stroka_1">
+							<p><strong>Rum 1</strong> - Ange Resesällskap:</p><br>
+							<select name="vuxna">
+								<option value="1_vuxna">1 vuxna</option>
+								<option selected value="2_vuxna">2 vuxna</option>
+								<option value="3_vuxna">3 vuxna</option>
+								<option value="4_vuxna">4 vuxna</option>
+							</select>
+						</div>
+						<div class="stroka_4">
+							<p>Ålder på barn (0-17):</p><br>
+							<input class="barn_4"type="number" min="0" max="17" name="ålder_på_barn">
+							<input class="barn_4_2" type="number" min="0" max="17" name="ålder_på_barn">
+						</div>
+						<div class="stroka_1">
+							<p><strong>Rum 2</strong> - Ange Resesällskap:</p><br>
+							<select name="vuxna">
+								<option value="1_vuxna">1 vuxna</option>
+								<option value="2_vuxna">2 vuxna</option>
+								<option selected value="3_vuxna">3 vuxna</option>
+								<option value="4_vuxna">4 vuxna</option>
+							</select>
+						</div>
+						<div class="stroka_4">
+							<p>Ålder på barn (0-17):</p><br>
+							<input class="barn_2" type="number" min="0" max="17" name="ålder_på_barn">
+						</div>
+						<butonn type="submit" class="submit">
+							<span class="icon"><i class="fa fa-search"></i></span>    		SÖK BOENDE
+						</butonn>
+					</div>
+					<div class="right_kol">
+						<div class="stroka_2">
+							<p>Välj boendeform:</p><br>
+							<select name="hotel">
+								<option value="none" hidden="">Hotell</option>
+								<option value="hotel_1">hotel_1</option>
+								<option value="hotel_2">hotel_2</option>
+								<option value="hotel_3">hotel_3</option>
+								<option value="hotel_4">hotel_4</option>
+							</select>
+						</div>
+						<div class="stroka_2">
+							<p>Utcheckning</p><br>
+							<input type="date" name="utcheckning" value="YYYY-MM-DD"><br>
+							<p class="comment">fredag (1 natt)</p>
+						</div>
+						<div class="pustoy1"></div>
+						<div class="stroka_2">
+							<select name="barn">
+								<option value="1_barn">1 barn</option>
+								<option value="2_barn">2 barn</option>
+								<option value="3_barn">3 barn</option>
+								<option selected value="4_barn">4 barn</option>
+								<option value="5_barn">5 barn</option>
+							</select>
+						</div>
+						<div class="stroka_2">
+							<p>Ålder på barn (0-17):</p><br>
+							<input class="barn_4" type="number" min="0" max="17" name="ålder_på_barn">
+							<input class="barn_4_2" type="number" min="0" max="17" name="ålder_på_barn">
+						</div>
+						<div class="stroka_2">
+							<p><strong>Rum 2</strong> - Ange Resesällskap:</p><br>
+							<select name="barn">
+								<option value="1_barn">1 barn</option>
+								<option selected value="2_barn">2 barn</option>
+								<option value="3_barn">3 barn</option>
+								<option value="4_barn">4 barn</option>
+								<option value="5_barn">5 barn</option>
+							</select>
+						</div>
+						<div class="stroka_2">
+							<p>Ålder på barn (0-17):</p><br>
+							<input class="barn_2" type="number" min="0" max="17" name="ålder_på_barn">
+						</div>
+					</div>
+			</form>
+		</div>
+		<div class="down">
+		</div>
+	</body>
+</html>
